@@ -12,3 +12,7 @@ phoneNumber varchar(12),
 email varchar(20)
 );
 select * from AddressBook
+
+insert into AddressBook (firstName,lastName,address,city,state,zip,phoneNumber,email) 
+values('Suraj','Dal','Rajgad','Pune','Maharashtra','412213','9876543210','surajdal@gmail.com');
+select * from AddressBook;
