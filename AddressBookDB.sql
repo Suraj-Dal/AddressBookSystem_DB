@@ -1,0 +1,2 @@
+CREATE DATABASE Address_Book_Service_DB
+use Address_Book_Service_DB
