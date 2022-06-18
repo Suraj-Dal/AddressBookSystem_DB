@@ -59,3 +59,8 @@ update AddressBook set Name='Self', Type='Self' where PersonID='SurajDal';
 update AddressBook set Name='School', Type='Friend' where PersonID='AkshayP';
 update AddressBook set Name='Diploma', Type='Friend' where PersonID='AdityaT';
 select * from AddressBook;
+
+select COUNT(State) from AddressBook;
+select Type, count(*) as NoOfContacts
+from AddressBook group by (Type);
+
