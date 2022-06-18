@@ -19,6 +19,8 @@ insert into AddressBook (PersonID,First_Name,Last_Name,Address,City,State,Zip,Ph
 values('SurajDal','Suraj','Dal','Rajgad','Pune','Maharashtra','412213','9876543210','surajdal@gmail.com');
 insert into AddressBook (PersonID,First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email) 
 values('SanketDal','Sanket','Dal','Vadgaon','Pune','Maharashtra','411047','9423371234','sanketdal@gmail.com');
+insert into AddressBook (PersonID,First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email) 
+values('MayureshD','Mayuresh','D','Marathahalli','Bangalore','Karnataka','560037','9906607712','mayuresh@gmail.com');
 select * from AddressBook;
 
 
@@ -27,3 +29,6 @@ select * from AddressBook;
 
 delete from AddressBook where PersonID='SanketDal';
 select * from AddressBook;
+
+select * from AddressBook where City='Pune';
+select * from AddressBook where State='Karnataka';
