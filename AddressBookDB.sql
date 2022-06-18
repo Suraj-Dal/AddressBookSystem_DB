@@ -49,3 +49,13 @@ from AddressBook group by (State);
 
 select * from AddressBook where City = 'Pune'
 order by (First_Name);
+
+
+alter table AddressBook add Name varchar(300) not null,Type varchar(300) not null;
+select * from AddressBook;
+
+update AddressBook set Name='IT', Type='Profession' where PersonID='MayureshD';
+update AddressBook set Name='Self', Type='Self' where PersonID='SurajDal';
+update AddressBook set Name='School', Type='Friend' where PersonID='AkshayP';
+update AddressBook set Name='Diploma', Type='Friend' where PersonID='AdityaT';
+select * from AddressBook;
