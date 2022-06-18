@@ -32,3 +32,13 @@ select * from AddressBook;
 
 select * from AddressBook where City='Pune';
 select * from AddressBook where State='Karnataka';
+
+select COUNT(city) from AddressBook;
+
+select City, count(*) as AddressCount
+from AddressBook group by (City);
+
+select COUNT(State) from AddressBook;
+
+select State, count(*) as AddressCount
+from AddressBook group by (State);
